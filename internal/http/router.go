@@ -13,5 +13,5 @@ func RegisterRouter(app *fiber.App) {
 
 	notificationGroup := app.Group("/notification")
 
-	notificationGroup.Post("/:"+notification.ChannelIdParamName, notificationController.SendNotification)
+	notificationGroup.Post("/discord/:"+notification.ChannelIdParamName, notificationController.SendNotification)
 }
