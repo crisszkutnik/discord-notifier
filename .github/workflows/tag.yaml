@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - run: git config --global user.name "crisszkutnik"
+      - run: git config --global user.email "crisszkutnik@gmail.com"
       - run: git fetch --prune --unshallow --tags
       - run: git tag ${{ inputs.version }}
       - run: git commit -m "${{ inputs.version }}" --allow-empty
