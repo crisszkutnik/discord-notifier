@@ -2,7 +2,7 @@ module github.com/crisszkutnik/discord-notifier
 
 go 1.23
 
-toolchain go1.23.9
+toolchain go1.23.10
 
 require (
 	github.com/bwmarrin/discordgo v0.28.1
