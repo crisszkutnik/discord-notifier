@@ -15,7 +15,7 @@ jobs:
       contents: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           # A custom token has to be used so this workflow can trigger the create-release workflow
           # see: https://github.com/orgs/community/discussions/27028#discussioncomment-3254360
