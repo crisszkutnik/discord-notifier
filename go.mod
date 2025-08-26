@@ -6,7 +6,7 @@ toolchain go1.23.12
 
 require (
 	github.com/bwmarrin/discordgo v0.28.1
-	github.com/gofiber/fiber/v3 v3.0.0-beta.4
+	github.com/gofiber/fiber/v3 v3.0.0-rc.1
 	github.com/joho/godotenv v1.5.1
 )
 
