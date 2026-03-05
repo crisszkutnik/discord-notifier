@@ -25,7 +25,7 @@ jobs:
           VERSION=${{ github.ref_name }}
           echo "DOCKER_TAG=${VERSION#v}" >> $GITHUB_ENV
       - name: Set up buildx
-        uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@v4
         with:
           platforms: linux/arm64,linux/amd64
       - name: Log in to container registry
